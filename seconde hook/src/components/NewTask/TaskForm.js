@@ -13,6 +13,8 @@ const TaskForm = (props) => {
     if (enteredValue.trim().length > 0) {
       props.onEnterTask(enteredValue);
     }
+      // empty input after form submit\
+      event.target.reset();
   };
 
   return (
